@@ -1,0 +1,47 @@
+SIMULATION OF NEURAL NETWORKS AND SINGLE NEURONS STIMULATED VIA LIGHT-SENSITIVE CHANNELS
+========================================================================================
+
+Copyright (c) Jannik Luboeinski 2015-2020
+
+E-mail: jannik.lubo[at]gmx.de
+
+================================================================================================================
+CHANGING THE CHANNEL MODEL:
+===========================
+
+The channel model is defined in the file ChR2_3state.cpp. Keeping the headers of the functions in this file
+while changing the content of the functions enables the seamless integration of an alternative channel model
+into the simulation framework defined in the other code files. 
+
+Most importantly, the function processTimeStep() contains the details of the channel dynamics.
+
+Parameter values should be defined in the constructor function ChR2().
+
+One possible alternative channel model, a four-state model, is already provided in the file ChR2_4state.cpp.
+
+
+================================================================================================================
+CHANGING THE NEURON MODEL:
+==========================
+
+The neuron model is defined in the file Neuron.cpp. Keeping the headers of the functions in this file while
+changing the content of the functions enables the seamless integration of an alternative neuron model into the
+simulation framework defined in the other code files.
+
+Most importantly, the function processTimeStep() contains the details of the neuronal computation.
+
+Parameter values should be defined in the constructor function Neuron() at the bottom of the file. This is also
+where the expression level (the number of light-sensitive channels) can be varied.
+
+
+================================================================================================================
+CHANGING THE SYNAPSE/NETWORK MODEL:
+===================================
+
+The synapse/network model is defined in the file Network.cpp. Keeping the headers of the functions in this file
+while changing the content of the functions enables the seamless integration of an alternative network model
+into the simulation framework defined in the other code files.
+
+Most importantly, the function processTimeStep() contains the details of the network dynamics.
+
+Parameter values should be defined in the constructor function Network().

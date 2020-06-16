@@ -1,10 +1,11 @@
 SIMULATION OF NEURAL NETWORKS AND SINGLE NEURONS STIMULATED VIA LIGHT-SENSITIVE CHANNELS
 ========================================================================================
 
+Version 1.0
 Copyright (C) Jannik Luboeinski 2015-2020
-GSL v2.4: Copyright (C) Mark Galassi, Jim Davies, James Theiler, Brian Gough, Reid Priedhorsky, Gerard Jungman, Michael Booth, Fabrice Rossi, Simone Piccardi, Carlo Perassi, Ho-Jin Dan, Szymon Jaroszewicz, Nicolas Darnis, Tuomo Keskitalo, Ivo Alxneit, Jason H. Stover, Patrick Alken, Rhys Ulerich, Pavel Holoborodko, Pedro Gonnet 2017 
 
 E-mail: jannik.lubo[at]gmx.de
+
 
 ================================================================================================================
 LICENSE:
@@ -20,6 +21,11 @@ for more details.
 
 You should have received a copy of the GNU General Public License along with this program (in "LICENSE.txt").
 If not, see <https://www.gnu.org/licenses/>.
+
+This program uses GSL v2.4, copyright (C) Mark Galassi, Jim Davies, James Theiler, Brian Gough, Reid Priedhorsky, 
+Gerard Jungman, Michael Booth, Fabrice Rossi, Simone Piccardi, Carlo Perassi, Ho-Jin Dan, Szymon Jaroszewicz, 
+Nicolas Darnis, Tuomo Keskitalo, Ivo Alxneit, Jason H. Stover, Patrick Alken, Rhys Ulerich, Pavel Holoborodko, 
+Pedro Gonnet 2017.
 
 
 ================================================================================================================
@@ -87,7 +93,7 @@ ChR2_3state.hpp: class describing a channel probabilistically using a three-stat
 ChR2_4state.hpp: class describing a channel probabilistically using a four-state model (optionally)
 Plots.hpp: collection of plotting functions
 Stimulus.hpp: class for defining a stimulus protocol
-Tool.hpp: collection of utility functions
+Tools.hpp: collection of utility functions
 
 
 ================================================================================================================
@@ -116,7 +122,7 @@ To include the GSL static libraries into the binary, add:
 
  -static
 
-See also the bash script "compile.sh". Pre-compiled binaries for Linux (tested with Ubuntu 18.04 LTS) can be found in the directory "bin/".
+See also the bash script "compile.sh".
 
 
 ================================================================================================================
@@ -145,12 +151,14 @@ To include the GSL static libraries into the binary, add:
 
  -static
 
-See also the bash script "compile.bat". Pre-compiled binaries for Linux (tested with Ubuntu 18.04 LTS) can be found in the directory "bin/".
+See also the bash script "compile.bat".
 
 
 ================================================================================================================
 RUN SIMULATIONS IN LINUX:
 =========================
+
+Pre-compiled binaries for Linux (tested with Ubuntu 18.04 LTS) can be found in the directory "bin/".
 
 If you want plots to be created automatically, which is recommended, please make sure that gnuplot (tested with version 5.0.1) 
 is installed and bound to the system command "gnuplot".
@@ -175,6 +183,8 @@ All possible command-line arguments can be found in "NetworkBatch.cpp" and "Neur
 ================================================================================================================
 RUN SIMULATIONS IN WINDOWS:
 ===========================
+
+Pre-compiled binaries for Windows (tested with Windows 10) can be found in the directory "bin/".
 
 If you want plots to be created automatically, which is recommended, please make sure that gnuplot (tested with version 5.0.1)
 is installed and the gnuplot path is bound to the PATH environment variable.

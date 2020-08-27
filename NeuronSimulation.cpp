@@ -2,7 +2,7 @@
  * Simulation of a single neuron with Channelrhodopsin-2 channels
  **************************************************************************
  *
- * Copyright (C) Jannik Luboeinski 2015-2020
+ * Copyright (C) Jannik Luboeinski 2020
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -296,7 +296,7 @@ int simulate(string working_dir, bool first_sim)
 
 	// Output with general information
 	cout << "\x1b[33mSimulating neuron for " << t_max << " ms (" << dateStr("", !first_sim) << ")\x1b[0m" << endl; // new time stamp here, possibly
-	cout << "Stimulus: rectangle, t_pulse = " << t_pulse << " ms, \x1b[34mfrequency = " << frequency << " Hz\x1b[0m" << endl;
+	cout << "Stimulus: rectangle, t_pulse = " << t_pulse << " ms, frequency = \x1b[36m" << frequency << " Hz\x1b[0m" << endl;
 
 	// Declarations and initializations
 	double *spikes_lst = new double[m+1]; // average spikes per trial neuron evoked by light stimulus

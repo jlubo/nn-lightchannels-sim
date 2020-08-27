@@ -2,7 +2,7 @@
  * Functions and classes for general purposes, fitting using GSL, etc.
  **************************************************************************
  *
- * Copyright (C) Jannik Luboeinski 2015-2020
+ * Copyright (C) Jannik Luboeinski 2020
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -16,6 +16,11 @@
  *
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <https://www.gnu.org/licenses/>.
+ * 
+ * This program uses GSL v2.4, copyright (C) Mark Galassi, Jim Davies, James Theiler, Brian Gough, Reid Priedhorsky,
+ * Gerard Jungman, Michael Booth, Fabrice Rossi, Simone Piccardi, Carlo Perassi, Ho-Jin Dan, Szymon Jaroszewicz,
+ * Nicolas Darnis, Tuomo Keskitalo, Ivo Alxneit, Jason H. Stover, Patrick Alken, Rhys Ulerich, Pavel Holoborodko,
+ * Pedro Gonnet 2017.
  */
 
 // namespace std is required
@@ -34,7 +39,7 @@
 #include <memory> // for unique pointers
 
 // GSL functions for fitting - therefore, link with "-lgsl -lgslcblas"
-// the code is optimized for GSL 2.4, which is licensed under the GNU General Public License v3
+// the code is optimized for GSL 2.4
 #include <gsl/gsl_vector.h>
 #include <gsl/gsl_blas.h>
 #include <gsl/gsl_multifit_nlin.h>

@@ -2,7 +2,7 @@ SIMULATION OF NEURAL NETWORKS AND SINGLE NEURONS STIMULATED VIA LIGHT-SENSITIVE 
 ========================================================================================
 
 Version 1.0
-Copyright (C) Jannik Luboeinski 2015-2020
+Copyright (C) Jannik Luboeinski 2020
 
 E-mail: jannik.lubo[at]gmx.de
 
@@ -34,16 +34,18 @@ MAIN REMARKS:
 
 The package provided here serves to run customizable simulations of neural networks and single neurons receiving
 stimulation through light-activated channels, and to measure the spatial firing rate response in networks
-as well as the firing rate and channel dynamics of single neurons under pulsed light stimulation. However, the code 
-offers even more features, some of which will be mentioned in the following. Please feel free to contact the authors
-on questions about this code and on further investigations that can be done with it.
+as well as the firing rate and channel dynamics of single neurons under pulsed light stimulation. Related 
+investigations have been published in Luboeinski and Tchumatchenko, Network Neuroscience, 2020. However, the code 
+offers even more features, some of which will be mentioned in the following, and some of which have been used
+for other previous investigations done by the authors (e.g., Luboeinski, Master's thesis, 2016). Please feel free
+to contact the authors on questions about this code and on further investigations that can be done with it.
 
 In addition to the code, this package also contains pre-compiled, ready-to-run binaries for Linux and Windows
 (Ubuntu 18.04 LTS and Windows 10), linked with GNU Scientific Library 2.4, which can be found in "bin/*".
 
 This software has originally been developed in the scope of the following study:
 
- Luboeinski and Tchumatchenko, Network Neuroscience, 2020
+ Luboeinski and Tchumatchenko, Network Neuroscience, 2020 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 Please consider to cite this work if you use the code or binaries for scientific purposes. 
 
@@ -102,7 +104,7 @@ COMPILE AND LINK IN LINUX:
 
 Requirements:
 
- g++ needs to be installed (tested with g++ version 4.6.3)
+ g++ needs to be installed (tested with g++ version 7.5.0)
 
  GNU Scientific Library (tested with GSL version 2.4) needs to be installed; alternatively, GSL functions in
  "Tools.hpp" can be commented and gnuplot or some other program be used for fitting
@@ -131,7 +133,7 @@ COMPILE AND LINK IN WINDOWS:
 
 Requirements:
 
- g++ (MinGW) needs to be installed (tested with g++ version 4.6.3) and "[MinGW]\bin" bound to the PATH environment variable
+ g++ (MinGW) needs to be installed (tested with g++ version 6.3.0) and "[MinGW]\bin" bound to the PATH environment variable
 
  GNU Scientific Library (tested with GSL version 2.4) needs to be installed in the MinGW directory, for example using MSYS; alternatively, 
  GSL functions in "Tools.hpp" can be commented and gnuplot or some other program be used for fitting

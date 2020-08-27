@@ -2,7 +2,7 @@
  * Three-state model of a single channelrhodopsin-2 channel
  **************************************************************************
  *
- * Copyright (C) Jannik Luboeinski 2015-2020
+ * Copyright (C) Jannik Luboeinski 2020
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by

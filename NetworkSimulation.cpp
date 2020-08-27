@@ -2,7 +2,7 @@
  * Simulation of a neuronal network with Channelrhodopsin-2 channels
  **************************************************************************
  *
- * Copyright (C) Jannik Luboeinski 2015-2020
+ * Copyright (C) Jannik Luboeinski 2020
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -156,14 +156,14 @@ int simulate(string working_dir, bool first_sim)
 	// if this is the first simulation of this batch (first_sim = true), use time stamp from NetworkBatch.cpp, else, set a new time stamp
 	cout << "\x1b[33mSimulating network with Ne = " << Nl*Nl << ", Ni = " << Nl_inh*Nl_inh
 		  << " for " << t_max << " ms (" << dateStr("", !first_sim) << ")\x1b[0m" << endl;
-	cout << "Stimulus: rectangle, t_pulse = " << t_pulse << " ms, \x1b[34mfrequency = " << frequency << " Hz\x1b[0m" << endl;
-	cout << "Other parameters: \x1b[32mpc = " << pc << "\x1b[0m, tau_syn = "
+	cout << "Stimulus: rectangle, t_pulse = " << t_pulse << " ms, frequency = \x1b[36m" << frequency << " Hz\x1b[0m" << endl;
+	cout << "Other parameters: pc = \x1b[32m" << pc << "\x1b[0m, tau_syn = \x1b[32m"
 #ifdef DELTA_SYNAPSES
 		  << 0
 #else
 		  << tau_syn
 #endif
-		  << " ms, J = " << J << ", \x1b[35mI_const = " << net.getConstCurrent(1,1) << " nA\x1b[0m" << endl;
+		  << " ms\x1b[0m, J = \x1b[32m" << J << "\x1b[0m, I_const = \x1b[35m" << net.getConstCurrent(1,1) << " nA\x1b[0m" << endl;
 
 	// Declarations and initializations
 	double max_firing_rate = 0.0; // contains the maximum firing rate over all exc. neurons and stimulus amplitudes

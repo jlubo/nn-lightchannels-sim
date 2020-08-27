@@ -3,7 +3,7 @@
  * channelrhodopsin-2 channels
  **************************************************************************
  *
- * Copyright (C) Jannik Luboeinski 2015-2020
+ * Copyright (C) Jannik Luboeinski 2020
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -58,8 +58,8 @@ int main()
 	cout << getSeparator('=') << endl
 	     << "\x1b[36mSimulation Tool for a Single Neuron with Light-Sensitive Channels\x1b[0m" << endl
 	     << getSeparator('=') << endl
+	     << "Version: 1.0, Author: Jannik Luboeinski" << endl
 	     << "Code and documentation: https://jlubo.net/nn-lightchannels-sim" << endl
-	     << "Contact: Jannik Luboeinski <jannik.lubo[at]gmx.de>" << endl
 	     << getSeparator('-') << endl;
 
 	// demand arguments from user

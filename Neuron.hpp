@@ -2,7 +2,7 @@
  * Leaky Integrate-and-Fire model of a single neuron with ChR2 channels
  **************************************************************************
  *
- * Copyright (C) Jannik Luboeinski 2015-2020
+ * Copyright (C) Jannik Luboeinski 2020
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
